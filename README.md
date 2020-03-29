@@ -22,7 +22,7 @@ pip install -r requirements.txt
 
     ```python fastmvsnet/train.py --cfg configs/dtu.yaml```
   
-You could change the batch size in the configuration file according to your own pc.
+    You could change the batch size in the configuration file according to your own pc.
 
 ### Testing
 * Download the [rectified images](http://roboimagedata2.compute.dtu.dk/data/MVS/Rectified.zip) from [DTU benchmark](http://roboimagedata.compute.dtu.dk/?page_id=36) and unzip it to ```data/dtu/Eval```.
