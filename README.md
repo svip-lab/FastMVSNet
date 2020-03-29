@@ -7,8 +7,6 @@ PyTorch implementation of our CVPR 2020 paper:
 Zehao Yu,
 [Shenghua Gao](http://sist.shanghaitech.edu.cn/sist_en/2018/0820/c3846a31775/page.htm)
 
-## Introduction
-
 ## How to use
 ```bash
 git clone git@github.com:svip-lab/FastMVSNet.git
