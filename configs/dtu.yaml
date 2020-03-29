@@ -1,0 +1,42 @@
+DATA:
+  TRAIN:
+    ROOT_DIR: "data/dtu2"
+    NUM_VIRTUAL_PLANE: 48
+    INTER_SCALE: 4.24
+  VAL:
+    ROOT_DIR: "data/dtu"
+  TEST:
+    ROOT_DIR: "data/dtu2"
+    NUM_VIEW: 5
+    IMG_HEIGHT: 960
+    IMG_WIDTH: 1280
+    NUM_VIRTUAL_PLANE: 96
+    INTER_SCALE: 2.13
+  NUM_WORKERS: 16
+MODEL:
+  EDGE_CHANNELS: (32, 32, 64)
+  TRAIN:
+    IMG_SCALES: (0.25, 0.5)
+    INTER_SCALES: (0.75, 0.375)
+  TEST:
+    IMG_SCALES: (0.25, 0.5)
+    INTER_SCALES: (0.75, 0.15)
+SCHEDULER:
+  TYPE: "StepLR"
+  INIT_EPOCH: 4
+  MAX_EPOCH: 16
+  StepLR:
+    gamma: 0.9
+    step_size: 2
+SOLVER:
+  BASE_LR: 0.0005
+  WEIGHT_DECAY: 0.001
+  TYPE: 'RMSprop'
+TRAIN:
+  BATCH_SIZE: 16
+  CHECKPOINT_PERIOD: 1
+  LOG_PERIOD: 10
+TEST:
+  WEIGHT: "outputs/dtu_wde3/model_016.pth"
+
+
