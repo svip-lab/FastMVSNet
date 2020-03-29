@@ -34,6 +34,10 @@ pip install -r requirements.txt
 ### Depth Fusion
 We need to apply depth fusion ```tools/depthfusion.py``` to get the complete point cloud. Please refer to [MVSNet](https://github.com/YoYo000/MVSNet) for more details.
 
+```bash
+python tools/depthfusion.py -f dtu -n flow2
+```
+
 ## Acknowledgements
 Most of the code is borrowed from [PointMVSNet](https://github.com/callmeray/PointMVSNet). We thank Rui Chen for his great works and repos.
 
