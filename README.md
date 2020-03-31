@@ -2,7 +2,7 @@
 
 PyTorch implementation of our CVPR 2020 paper:
 
-[Fast-MVSNet: Sparse-to-Dense Multi-View Stereo With Learned Propagation and Gauss-Newton Refinement](https://github.com/svip-lab/FastMVSNet)
+[Fast-MVSNet: Sparse-to-Dense Multi-View Stereo With Learned Propagation and Gauss-Newton Refinement](https://arxiv.org/pdf/2003.13017.pdf)
 
 Zehao Yu,
 [Shenghua Gao](http://sist.shanghaitech.edu.cn/sist_en/2018/0820/c3846a31775/page.htm)
